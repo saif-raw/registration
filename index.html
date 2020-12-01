@@ -1,63 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <title>Registration form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 </head>
+
 <body>
-    <form>
+    <div class="testbox">
+        <h1>Registration</h1>
 
-        <fieldset>
-            <legend>Registration Form</legend>
+        <form action="/">
+            <hr>
+            <div class="accounttype">
+                <input type="radio" value="None" id="radioOne" name="account" checked/>
+                <label for="radioOne" class="radio" chec>Trainee</label>
+                <input type="radio" value="None" id="radioTwo" name="account" />
+                <label for="radioTwo" class="radio">Employee</label>
+            </div>
+            <hr>
 
-            <br> <br>
+            <label id="icon" for="name"><i class="icon-user"></i></label>
+            <input type="text" name="name" id="name" placeholder="Name" required/>
 
-            <div class="control-group">
+            <label id="icon" for="name"><i class="icon-home"></i></label>
+            <input type="text" name="name" id="name" placeholder="Address" required/>
 
-                <!-- Username -->
-                <label class="control-label" for="username">Username</label>
-                <div class="controls">
-                    <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-                    <br><br><br>
-                </div>
-            </div>
-    
-            <div class="control-group">
-                <!-- E-mail -->
-                <label class="control-label" for="email">E-mail</label>
-                <div class="controls">
-                    <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-                    <br><br><br>
-                </div>
-            </div>
-    
-            <div class="control-group">
-                <!-- Password-->
-                <label class="control-label" for="password">Password</label>
-                <div class="controls">
-                    <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-                    <br><br><br>
-                </div>
-            </div>
-    
-            <div class="control-group">
-                <!-- Password -->
-                <label class="control-label" for="password_confirm">Confirm Password</label>
-                <div class="controls">
-                    <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
-                    <br><br><br><br>
-                </div>
-            </div>
-    
-            <div class="control-group">
-                <!-- Button -->
-                <div class="controls">
-                    <button class="btn btn-success">Register</button>
-                </div>
-            </div>
+            <label id="icon" for="name"><i class="icon-globe"></i></label>
+            <input type="text" name="name" id="name" placeholder="Country" required/>
 
-        </fieldset>
-    </form>
+
+            <label id="icon" for="name"><i class="icon-book"></i></label>
+            <input type="text" name="name" id="name" placeholder="Organisation" required/>
+
+            <label id="icon" for="name"><i class="icon-envelope "></i></label>
+            <input type="text" name="name" id="name" placeholder="Email" required/>
+
+            <label id="icon" for="name"><i class="icon-shield"></i></label>
+            <input type="password" name="name" id="name" placeholder="Password" required/>
+
+            <div class="gender">
+                <input type="radio" value="None" id="male" name="gender" checked/>
+                <label for="male" class="radio" chec>Male</label>
+                <input type="radio" value="None" id="female" name="gender" />
+                <label for="female" class="radio">Female</label>
+
+            </div>
+            <a href="#" class="button">Register</a>
+        </form>
+    </div>
 </body>
+<script src="./src/main.js"></script>
+
 </html>
